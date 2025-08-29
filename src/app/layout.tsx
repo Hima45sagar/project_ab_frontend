@@ -1,3 +1,4 @@
+import { Toaster } from "@/components/ui/sonner";
 import "../styles/globals.css";
 import type { Metadata } from "next";
 import { Inter, Roboto, Manrope } from "next/font/google";
@@ -9,19 +10,19 @@ const inter = Inter({
 
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["400", "500", "700"], // common weights
+  weight: ["400", "500", "700", "800"], // common weights
   variable: "--font-roboto",
 });
 
 const manrope = Manrope({
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["400", "500", "700", "800"],
   variable: "--font-manrope",
 });
 
 export const metadata: Metadata = {
-  title: "RePut.ai",
-  description: "RePut.ai",
+  title: "CarbonScan.ai",
+  description: "CarbonScan.ai",
 };
 
 export default function RootLayout({
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${roboto.variable} ${manrope.variable} antialiased`}
       >
+        <Toaster position="top-right" />
         {children}
       </body>
     </html>
