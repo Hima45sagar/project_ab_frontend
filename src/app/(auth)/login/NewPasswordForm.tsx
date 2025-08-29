@@ -87,7 +87,7 @@ export default function NewPasswordForm({
           height={35}
           className="rounded-md"
         />
-        <span className="font-roboto text-xl font-semibold tracking-wide">
+        <span className="font-montserrat text-xl font-semibold tracking-wide">
           CarbonScan.ai
         </span>
       </motion.div>

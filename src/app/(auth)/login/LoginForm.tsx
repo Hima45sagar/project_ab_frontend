@@ -45,7 +45,7 @@ export default function LoginForm({
           width={35}
           height={35}
         />
-        <span className="font-roboto text-xl font-semibold tracking-wide">
+        <span className="font-montserrat text-xl font-semibold tracking-wide">
           CarbonScan.ai
         </span>
       </div>
