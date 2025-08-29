@@ -1,23 +1,20 @@
 import { Toaster } from "@/components/ui/sonner";
 import "../styles/globals.css";
 import type { Metadata } from "next";
-import { Inter, Roboto, Manrope } from "next/font/google";
+import { Poppins, Montserrat } from "next/font/google";
 
-const inter = Inter({
+const poppins = Poppins({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-poppins",
+  display: "swap",
 });
 
-const roboto = Roboto({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["400", "500", "700", "800"], // common weights
-  variable: "--font-roboto",
-});
-
-const manrope = Manrope({
-  subsets: ["latin"],
-  weight: ["400", "500", "700", "800"],
-  variable: "--font-manrope",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-montserrat",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -33,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${roboto.variable} ${manrope.variable} antialiased`}
+        className={`${poppins.variable} ${montserrat.variable} font-sans antialiased`}
       >
         <Toaster position="top-right" />
         {children}
